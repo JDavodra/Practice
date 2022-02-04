@@ -1,0 +1,1 @@
+This folder contains a shell scripting cheat sheet for me to look at as a reference.

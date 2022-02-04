@@ -1,0 +1,201 @@
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ pwd
+/c/Users/jahes/Documents/shell script
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ls -a
+./  ../  hello/  myscript.sh*  new-new-test.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ls -l
+total 5
+drwxr-xr-x 1 jahes 197609    0 Feb  3 16:42 hello/
+-rwxr-xr-x 1 jahes 197609 1841 Feb  3 16:48 myscript.sh*
+-rw-r--r-- 1 jahes 197609  283 Feb  3 16:32 new-new-test.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ mkdir dir1
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ls
+dir1/  hello/  myscript.sh*  new-new-test.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ mkdir dir2
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ cd dir1
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ cd ..
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ cd /
+
+jahes@DESKTOP-QQSIGLO MINGW64 /
+$ cd ~
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~
+$ pwd
+/c/Users/jahes
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~
+$ cd Documents/shell\ script/
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ cd dir1
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ touch file1.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ nano file1.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ cat file1.txt
+Hello World
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ less file1.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ mv file1.txt file2.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ cat file2.txt
+Hello World
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ cat file1.txt
+cat: file1.txt: No such file or directory
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ cp file2.txt file1.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ cat file1.txt
+Hello World
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ rm file1.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ ls
+file2.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir1
+$ cd ..
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ rmdir dir2
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ mkdir dir2
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ cd dir2
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir2
+$ ls
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir2
+$ touch file1.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir2
+$ cd..
+bash: cd..: command not found
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script/dir2
+$ cd ..
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ rmdir dir2
+rmdir: failed to remove 'dir2': Directory not empty
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ rm -R dir2
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ls
+dir1/  hello/  myscript.sh*  new-new-test.txt
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ which google
+which: no google in (/c/Users/jahes/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/jahes/bin:/c/Program Files (x86)/Intel/iCLS Client:/c/Program Files/Intel/iCLS Client:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Users/jahes/AppData/Local/Microsoft/WindowsApps:/usr/bin/vendor_perl:/usr/bin/core_perl)
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ifconfig
+bash: ifconfig: command not found
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ipconfig
+
+Windows IP Configuration
+
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::4cd7:e46c:577c:277%10
+   IPv4 Address. . . . . . . . . . . : 192.168.1.15
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ iwconfig
+bash: iwconfig: command not found
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ping google.com
+
+Pinging google.com [172.217.165.14] with 32 bytes of data:
+Reply from 172.217.165.14: bytes=32 time=12ms TTL=120
+Reply from 172.217.165.14: bytes=32 time=13ms TTL=120
+Reply from 172.217.165.14: bytes=32 time=14ms TTL=120
+Reply from 172.217.165.14: bytes=32 time=22ms TTL=120
+
+Ping statistics for 172.217.165.14:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 12ms, Maximum = 22ms, Average = 15ms
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ^C
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ ping odadjldnak
+Ping request could not find host odadjldnak. Please check the name and try again.
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ uname -a
+MINGW64_NT-10.0-19042 DESKTOP-QQSIGLO 3.3.3-341.x86_64 2022-01-17 11:45 UTC x86_64 Msys
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ blkid
+bash: blkid: command not found
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ bld
+bash: bld: command not found
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$ top
+bash: top: command not found
+
+jahes@DESKTOP-QQSIGLO MINGW64 ~/Documents/shell script
+$
